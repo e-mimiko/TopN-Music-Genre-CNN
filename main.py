@@ -40,10 +40,33 @@ def prompt_user() -> str:
         else:
             print("\nFile is not a .wav audio file. Please try again.\n")
 
+def display_genres(g_dict: dict[str, float]) -> None:
+    """
+    Displays genres from provided dictionary
+    """
+
+    for genre, metric in g_dict.items():
+        if metric > 0.0:
+            print(key, ":", str(metric))
+    
+    return
+
 def main():
     """
     Main Function - Executes main program of project and calls functions
     """
+    g_dict = {
+        "Option 1": 0.0,
+        "Option 2": 0.0,
+        "Option 3": 0.0,
+        "Option 4": 0.0,
+        "Option 5": 0.0,
+        "Option 6": 0.0,
+        "Option 7": 0.0,
+        "Option 8": 0.0,
+        "Option 9": 0.0,
+        "Option 10": 0.0,
+    }
 
     #   Display Info: (To-Do PR1 - April 24)
     program_desc()
@@ -64,5 +87,6 @@ def main():
     #   Sort Results (To-DO PR3 - May 24)
 
     #   Print Results: (To-Do PR1 - April 24) -> Edit for PR 3/4 - May 24/June 2
+    display_genres(g_dict)
 
     return
