@@ -8,24 +8,26 @@ def program_desc() -> None:
     Displays information describing program
     """
 
-    print("Welcome to Top-N Music Genre CNN!\n")
-    print("This program is able to identify the following genres:\n"
+    print("Welcome to Top-N Music Genre CNN!\n"
+          "This program is able to identify the following genres:\n"
           "\t1. Option 1\n\t2. Option 2\n\t3. Option 3\n\t4. Option 4\n\t5. Option 5\n"
-          "\t6. Option 6\n\t7. Option 7\n\t8. Option 8\n\t9. Option 9\n\t10. Option 10\n")
-    print("If provided a .wav audio file, this program will identify any of the above genres "
+          "\t6. Option 6\n\t7. Option 7\n\t8. Option 8\n\t9. Option 9\n\t10. Option 10\n"
+          "If provided a .wav audio file, this program will identify any of the above genres "
           "if they are exhibited in the audio file.\n")
     return
 
-def validate_f_input(f_input: str) -> bool: # TO-DO: Write checks for file type and extension!
+
+def validate_f_input(f_input: str) -> bool:  # TO-DO: Write checks for file type and extension!
     """
     Validates user input
     Return: BOOL - True if valid, False if invalid
     """
 
-    #if f_input is .wav: True
-    #else: False
+    # if f_input is .wav: True
+    # else: False
 
     return True
+
 
 def prompt_user() -> str:
     """
@@ -40,18 +42,20 @@ def prompt_user() -> str:
         else:
             print("\nFile is not a .wav audio file. Please try again.\n")
 
+
 def display_genres(g_dict: dict[str, float]) -> None:
     """
     Displays genres from provided dictionary
     Parameter: g_dict (DICT) - holds genres and accuracy metric
     """
 
-    print("Here are the genres detected with the percent confidence in the genre's presence:\n")
+    print("Here are the genres detected with the percent confidence in the genre's presence:")
     for genre, metric in g_dict.items():
         if metric > 0.0:
-            print(genre + ": " + str(metric) + "%\n")
-    
+            print(genre + ": " + str(metric) + "%")
+
     return
+
 
 def main():
     """
