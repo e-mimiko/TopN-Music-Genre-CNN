@@ -74,10 +74,10 @@ def main():
     program_desc()
 
     #   Display Prompt: (To-Do PR1 - April 24)
-    prompt_user()
+    wav_file = prompt_user()
 
     #   User Input: (To-Do PR1 - April 24)
-
+    
     #   Call Pipeline: (To-Do PR2 - May 10)
 
     #   Get Result from Pipeline: (To-Do PR2 - May 10)
