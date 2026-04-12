@@ -3,7 +3,7 @@
 #   Date: 04-12-2026
 #   Programmer: Kelsey Shanks
 
-def program_desc():
+def program_desc() -> None:
     """
     Displays information describing program
     """
@@ -16,7 +16,7 @@ def program_desc():
           "if they are exhibited in the audio file.\n")
     return
 
-def validate_f_input(f_input: str): # TO-DO: Write checks for file type and extension!
+def validate_f_input(f_input: str) -> bool: # TO-DO: Write checks for file type and extension!
     """
     Validates user input
     Return: BOOL - True if valid, False if invalid
@@ -27,7 +27,7 @@ def validate_f_input(f_input: str): # TO-DO: Write checks for file type and exte
 
     return True
 
-def prompt_user():
+def prompt_user() -> str:
     """
     Displays prompt to user for input
     Return: f_name (STR) - Holds file path to .wav audio file
