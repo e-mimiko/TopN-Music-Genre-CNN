@@ -43,6 +43,7 @@ def prompt_user() -> str:
 def display_genres(g_dict: dict[str, float]) -> None:
     """
     Displays genres from provided dictionary
+    Parameter: g_dict (DICT) - holds genres and accuracy metric
     """
 
     for genre, metric in g_dict.items():
