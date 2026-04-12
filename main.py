@@ -35,7 +35,7 @@ def prompt_user() -> str:
 
     while True:
         f_path = input("Please type the file path of the .wav audio file to examine: ")
-        if validate_f_input():
+        if validate_f_input(f_path):
             return f_path
         else:
             print("\nFile is not a .wav audio file. Please try again.\n")
