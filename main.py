@@ -10,8 +10,8 @@ def program_desc() -> None:
 
     print("Welcome to Top-N Music Genre CNN!\n"
           "This program is able to identify the following genres:\n"
-          "\t1. Option 1\n\t2. Option 2\n\t3. Option 3\n\t4. Option 4\n\t5. Option 5\n"
-          "\t6. Option 6\n\t7. Option 7\n\t8. Option 8\n\t9. Option 9\n\t10. Option 10\n"
+          "\t1. Classical\n\t2. Country\n\t3. Disco\n\t4. HipHop\n\t5. Jazz\n"
+          "\t6. Rock\n\t7. Blues\n\t8. Reggae\n\t9. Pop\n\t10. Metal\n"
           "If provided a .wav audio file, this program will identify any of the above genres "
           "if they are exhibited in the audio file.\n")
     return
@@ -62,16 +62,16 @@ def main():
     Main Function - Executes main program of project and calls functions
     """
     g_dict = {
-        "Option 1": 0.0,
-        "Option 2": 0.0,
-        "Option 3": 0.0,
-        "Option 4": 0.0,
-        "Option 5": 0.0,
-        "Option 6": 0.0,
-        "Option 7": 0.0,
-        "Option 8": 0.0,
-        "Option 9": 0.0,
-        "Option 10": 0.0,
+        "Classical": 0.0,
+        "Country": 0.0,
+        "Disco": 0.0,
+        "HipHop": 0.0,
+        "Jazz": 0.0,
+        "Rock": 0.0,
+        "Blues": 0.0,
+        "Reggae": 0.0,
+        "Pop": 0.0,
+        "Metal": 0.0,
     }
 
     #   Display Info: (To-Do PR1 - April 24)
