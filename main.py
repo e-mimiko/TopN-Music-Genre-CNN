@@ -49,7 +49,7 @@ def display_genres(g_dict: dict[str, float]) -> None:
     print("Here are the genres detected with the percent confidence in the genre's presence:\n")
     for genre, metric in g_dict.items():
         if metric > 0.0:
-            print(key, ":", str(metric), "%\n")
+            print(key + ": " + str(metric) + "%\n")
     
     return
 
